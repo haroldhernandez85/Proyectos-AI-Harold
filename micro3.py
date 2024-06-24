@@ -56,7 +56,6 @@ api_key = 'd9bt7u6M93FqeE7ncvzKbzMyayNdQiTk'
 if not api_key:
     raise Exception("A key should be provided to invoke the endpoint")
 
-
 headers = {'Content-Type':'application/json', 'Authorization':('Bearer '+ api_key)}
 
 req = urllib.request.Request(url, body, headers)
